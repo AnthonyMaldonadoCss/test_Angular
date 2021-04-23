@@ -17,7 +17,6 @@ export class TeacherComponent implements OnInit {
 
   }
 
-
   constructor(private formBuilder: FormBuilder) { }
 
   registerForm = this.formBuilder.group({

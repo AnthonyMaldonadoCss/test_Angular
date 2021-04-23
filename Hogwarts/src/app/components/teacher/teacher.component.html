@@ -1,20 +1,28 @@
-<form (submit)="submit()" [formGroup]="registerForm">
-    <div class="form-group">
-        <label for="name">
-            Name:
-            <input type="text" class="form-control" formControlName="name">
-        </label>
-        <label for="patronus">
-            Patronus:
-            <input type="text" class="form-control" formControlName="patronus">
-        </label>
-        <label for="age">
-            Age:
-            <input type="date" class="form-control" formControlName="age">
-        </label>
-
-        <button type="submit" class="btn btn-success">Enviar</button>
-        <button type="reset" class="btn btn-default" (click)="refrescar()"> Refrescar</button>
-
+<div class="row">
+    <div class="col-sm"></div>
+    <div class="col-sm">
+        <form (submit)="submit()" [formGroup]="registerForm">
+            <div class="form-group">
+                <label for="name">
+                    Name:
+                    <input type="text" class="form-control" formControlName="name">
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="patronus">
+                    Patronus:
+                    <input type="text" class="form-control" formControlName="patronus">
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="age">
+                    Age:
+                    <input type="date" class="form-control" formControlName="age">
+                </label>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+            <button type="reset" class="btn btn-danger" (click)="refrescar()"> Refrescar</button>
+        </form>
     </div>
-</form>
+    <div class="col-sm"></div>
+</div>
