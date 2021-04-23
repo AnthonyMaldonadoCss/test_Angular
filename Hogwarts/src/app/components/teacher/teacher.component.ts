@@ -11,22 +11,12 @@ import { FormBuilder } from "@angular/forms";
 
 export class TeacherComponent implements OnInit {
 
-  lista: any;
 
 
-  ngOnInit(): void {
-    this.lista = [];
-    let arreglo = JSON.parse(localStorage.getItem("actividades"));
-    if (arreglo != null)
-      for (let actividad of arreglo)
-        this.lista.push(actividad);
+  ngOnInit() {
+
   }
 
-  agregar() {
-    this.lista.push(this.name.value);
-    localStorage.setItem('actividades', JSON.stringify(this.lista));
-    this.name.setValue('');
-  }
 
   constructor(private formBuilder: FormBuilder) { }
 
