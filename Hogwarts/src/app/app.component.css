@@ -1,3 +1,32 @@
 .face{
     width: 15%;
 }
+table {
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 0.1em solid  black;
+}
+tr {
+    height: 8vh;
+}
+
+th {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+td {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+    transition: all 0.3s    ;
+}
+table tr:nth-child(even):hover {
+    background-color:#b9b9b9;    
+}
